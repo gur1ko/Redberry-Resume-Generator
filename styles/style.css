@@ -1,0 +1,476 @@
+@font-face {
+    font-family: HalveticaNeue;
+    src: url(../font/HelveticaNeue.ttc);
+}
+
+* {
+    font-family: 'Helvetica Neue';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* MAIN */
+
+.background-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../photos/bg-photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    padding: 25px 70px;
+}
+.line{
+    margin-top: 24px;
+    width: 100%;
+    height: 1px;
+    background-color: #1A1A1A;
+}
+.btn-add-resume{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #1A1A1A;
+    color: white;
+    padding: 18px 133px;
+    font-size: 20px;
+    border-radius: 8px; 
+    font-weight: 500;
+    z-index: 1;
+}
+.transparent-logo{
+    position: absolute;
+    top: 44%;
+    left: 56%;
+    opacity: 0.7;
+}
+
+/* MAIN END */
+
+/* FORM */
+.main-container {
+    display: flex;
+    height: 100vh;
+}
+
+.vector {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 48px;
+    top: 45px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.vector img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left-container {
+    width: 57.18%;
+    height: 100vh;
+    background-color: #F6F6F6;
+    padding: 50px 150px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-header h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.3px;
+}
+
+.form-header span {
+    font-size: 20px;
+}
+
+.line {
+    margin-top: 15px;
+    width: 100%;
+    height: 1px;
+    background-color: #1A1A1A;
+}
+
+.fullname {
+    display: flex;
+    gap: 52px;
+    margin: 69px 0px 54px;
+}
+
+.name {
+    width: 50%;
+    position: relative;
+}
+
+/* success */
+.check {
+    position: absolute;
+    right: 9px;
+    bottom: 42px;
+    display: none;
+}
+
+/* error */
+.warning {
+    position: absolute;
+    right: -30px;
+    bottom: 42px;
+    display: none;
+}
+
+.name label,
+.surname label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.name input,
+.surname input,
+.select {
+    padding: 13px 16px;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    margin: 8px 0px;
+}
+
+.name p,
+.surname p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #2E2E2E;
+    line-height: 21px;
+}
+
+.name input::placeholder,
+.surname input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 21px;
+}
+
+.name input:focus,
+.surname input:focus,
+.about-me-container textarea:focus,
+.email-container input:focus,
+.phone-container input:focus {
+    border-color: #767373;
+}
+
+
+.surname {
+    width: 50%;
+    position: relative;
+}
+
+/* photo upload */
+.photo-upload {
+    margin: 55px 0px;
+}
+
+.photo-upload label:first-of-type {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-right: 19px;
+    color: #1A1A1A;
+}
+
+.ulpoad {
+    color: white;
+    padding: 7px 19px;
+    font-size: 14px;
+    background-color: #0E80BF;
+    cursor: pointer;
+    line-height: 16.7px;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.ulpoad input {
+    display: none;
+}
+
+/* about-me */
+.about-me-container,
+.email-container,
+.phone-container {
+    margin: 35px 0px;
+    position: relative;
+}
+
+#phoneIcon,
+#sabachka,
+.about-me {
+    display: none;
+}
+
+.about-me-container label,
+.email-container label,
+.phone-container label {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+}
+
+.about-me-container textarea {
+    margin-top: 8px;
+    resize: none;
+    width: 100%;
+    height: 123px;
+    outline: none;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    padding-top: 13px;
+    padding-left: 16px;
+}
+
+.email-container input,
+.phone-container input {
+    padding: 13px 16px;
+    border: 1px solid #BCBCBC;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    margin: 8px 0px;
+}
+
+/* .phone-container input {
+    font-size: 18px;
+} */
+.email-container p,
+.phone-container p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #2E2E2E;
+    line-height: 21px;
+}
+
+.about-me-container textarea::placeholder,
+.email-container input::placeholder,
+.phone-container input::placeholder {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+/* nexbutton */
+.next-button-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.next-button-container .next-button {
+    color: white;
+    background-color: #6B40E3;
+    padding: 15px 38px;
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1.28px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+/* add-experience-btn */
+.add-experience-btn {
+    margin-top: 45px;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    padding: 14px 21px;
+    background-color: #62A1EB;
+    border: none;
+    border-radius: 4px;
+}
+
+
+/* education */
+.name select .placeholder {
+    color: red;
+}
+
+/* right-container */
+.right-container {
+    height: 100vh;
+    width: 42.82%;
+}
+
+
+/* experience page */
+
+/* error & success classes */
+.borderGreen {
+    border-color: #98E37E !important;
+}
+
+.success input {
+    border-color: #98E37E;
+}
+
+.success .check {
+    display: block;
+}
+
+.error input {
+    border-color: #E52F2F;
+}
+
+.error label {
+    color: #E52F2F;
+}
+
+.error .warning {
+    display: block;
+}
+
+/* FORM END */
+
+/* RESUMe */
+
+.vector {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 48px;
+    top: 45px;
+    border-radius: 50%;
+    background-color: #F9F9F9;
+}
+
+.vector img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.resume-container {
+    padding: 70px 80px;
+    position: relative;
+    top: 45px;
+    max-width: 822px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 1080px;
+}
+
+.r-fullname {
+    color: #F93B1D;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41.51px;
+    display: flex;
+    gap: 20px;
+}
+
+.email,
+.phone {
+    margin: 14px 0px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.47px;
+    color: #1A1A1A;
+}
+
+.image-container {
+    width: 246px;
+    height: 246px;
+    position: absolute;
+    right: 75px;
+    top: 48px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.about-me,
+.experience,
+.education {
+    color: #F93B1D;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    margin: 30px 0px 15px;
+}
+
+#r-about_me {
+    max-width: 420px;
+    width: 100%;
+    color: #1A1A1A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #C8C8C8;
+    margin: 22px 0px;
+}
+
+.position-employer-container,
+.institute-degree-container {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #1A1A1A;
+}
+
+.dates {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #909090;
+    margin: 7px 0px 15px;
+}
+
+#r-description,
+#r-education_description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.small-logo {
+    position: absolute;
+    left: 78px;
+    bottom: 44px;
+}
+
+/* RESUME END */

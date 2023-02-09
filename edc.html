@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გამოცდილება</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="https://freepngimg.com/download/scroll/12-2-scroll-png-pic.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <a href="index.html" class="vector">
+                <img src="photos/Vector.png" alt="Vector-left">
+            </a>
+            <div class="form-header">
+                <h3>განათლება</h3>
+                <span>3/3</span>
+            </div>
+            <div class="line"></div>
+            <form action="" method="post" enctype="multipart/form-data" id="form">
+                <div class="new-experience">              
+                    <div class="email-container">
+                        <label for="institute">სასწავლებელი</label>
+                        <input type="text" name="institute" id="institute" placeholder="სასწავლებელი">
+                        <p>მინიმუმ 2 სიმბოლო</p>
+                    </div>
+                    <div class="fullname" style="margin: 35px 0px;">
+                        <div class="name">
+                            <label for="degree">ხარისხი</label>
+                            <select name="degree" id="degree" class="select">
+                                <option value="" disabled selected>აირჩიე ხარისხი</option>
+                            </select>
+                        </div>
+                        <div class="surname">
+                            <label for="due_date">დამთავრების რიცხვი</label>
+                            <input type="date" name="due_date" id="due_date">
+                        </div>
+                    </div>
+                    <div class="about-me-container">
+                        <label for="description">აღწერა</label>
+                        <textarea name="description" id="description" class="textarea" style="height: 179px;" placeholder="განათლების აღწერა"></textarea>
+                    </div>
+                    <div class="line" style="margin-top: 55px;"></div>
+                </div> 
+                <button class="add-experience-btn">მეტი გამოცდილების დამატება</button>
+                <div class="next-button-container" style="justify-content: space-between; margin-top: 180px;">
+                    <a href="/exp.html" class="next-button">უკან</a>
+                    <a href="/resm.html" type="submit" class="next-button">შემდეგი</a>
+                    
+                </div>  
+            </form>
+        </div>
+        <div class="right-container">
+            <div class="resume-container" style="top: 0; border: none;">
+                <div class="r-fullname">
+                    <div id="r-name"></div>
+                    <div id="r-surname"></div>
+                </div>
+                <div class="email">
+                    <img src="photos/@.png" alt="@">
+                    <p id="r-email"></p>
+                </div>
+                <div class="phone">
+                    <img src="photos/phone.png" alt="phone-icon">
+                    <p id="r-phone"></p>
+                </div>
+                <div class="image-container">
+                    <img src="" id="r-image" alt="">
+                </div>    
+                <div class="r-about-me-container">
+                    <h4 class="about-me">ჩემ შესახებ</h4>
+                    <p id="r-about_me"></p>
+                </div>
+                <div class="line"></div>
+                <div class="experience-container">
+                    <h4 class="experience">ᲒᲐᲛᲝᲪᲓᲘᲚᲔᲑᲐ</h4>
+                    <div class="position-employer-container">
+                        <span id="r-position"></span>
+                        <span id="r-employer"></span>
+                    </div>
+                    <div class="dates">
+                        <span id="r-start_date"></span>
+                        <span id="r-due_date"></span>
+                    </div>
+                    <p id="r-description"></p>
+                </div> 
+                <div class="line"></div>
+                <div class="education-container">
+                    <h4 class="education">განათლება</h4>
+                    <div class="institute-degree-container">
+                        <span id="r-institute"></span>
+                        <span id="r-degree"></span>
+                        <div class="dates">
+                            <span id="r-institute_due_date"></span>
+                        </div>
+                        <p id="r-education_description"></p>
+                    </div>
+                </div>            
+                <img src="photos/smallLogo.png" class="small-logo" alt="redbedberry-logo">
+            </div>
+        </div>
+    </div>
+   
+
+    <script src="javascripts/education.js"></script>
+</body>
+</html>
